@@ -1,0 +1,5 @@
+# No se quiere indexar ningún contenido de este sitio web en ningún buscador
+User-agent: *
+Disallow: /
+
+

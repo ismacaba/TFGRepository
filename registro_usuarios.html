@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>TFG: Asistente Web para la defensa de Derechos RGPD</title>
+    <meta name="description" content="TFG: Asistente Web para la defensa de Derechos RGPD">
+    <link rel="stylesheet" href="./css/style.css">    
+</head>
+
+<body>
+	<header id="pageContent">
+		<div id="logo"><a href="https://www.unir.net/" target="_blank"><img src="./img/logo-unir1.svg" title="UNIR: Universidad Internacional de La Rioja" border="0"></a>TFG: Asistente Web Derechos RGPD</div>
+		<nav>  
+			<ul>
+				<li><a href="./index.html" title="Inicio - Home">Inicio</a>
+				<li><a href="./derechos_rgpd.html" title="Conocer los Derechos RGPD">Derechos RGPD</a>
+				<li><a href="./reclamacion" title="Realizar una nueva Reclamación">Realizar Reclamación</a>
+				<li><a href="./empresas" title="Consultar Empresas">Empresas</a>
+				<li><a href="./registro_usuarios.html" title="Registro nuevo usuario">Registrarse</a>
+			</ul>
+		</nav>
+	</header>	
+	<section id="pageContentMain">
+		<p><h1>TFG. Asistente web para la defensa de los derechos recogidos en el RGPD</h1><br/><p>		
+		<main role="main">			
+			<h2>Registro de un nuevo usuario</h2>
+			<p>Para poder realizar una reclamación de sobre un derecho RGPD, es obligatorio estar registrado en este sistema, por favor, rellene el siguiente formulario:</p>
+			<br/><br/>
+			<form name="frmregistro" method="post" action="registro_usuarios_acciones?taccion=alta">
+				<table style="float:left; border: 0px solid black; width:650px; border-collapse:collapse;">
+					<tr>
+						<td width="150px" style="border: 0px solid black; padding:5px; margin:0px;"><label for="nombre">Nombre <span class="obligatorio">*</span></label></td>
+						<td width="500px"><input type="text" name="txtnombre" id="txtnombre" size="70px" required placeholder="Escriba Nombre del usuario"></td>
+					</tr>
+					<tr>
+						<td width="150px" style="border: 0px solid black; padding:5px; margin:0px;"><label for="apellidos">Apellidos <span class="obligatorio">*</span></label></td>
+						<td width="500px"><input type="text" name="txtapellidos" id="txtapellidos" size="70px" required placeholder="Escriba Apellidos del usuario"></td>
+					</tr>
+					<tr>
+						<td width="150px" style="border: 0px solid black; padding:5px; margin:0px;"><label for="nif">DNI/NIF <span class="obligatorio">*</span></label></td>
+						<td width="150px"><input type="text" name="dninif" id="dninif" required placeholder="Escriba su DNI/NIF"></td>
+					</tr>					
+					<tr>
+						<td width="150px" style="border: 0px solid black; padding:5px; margin:0px;"><label for="email">Email <span class="obligatorio">*</span></label></td>
+						<td width="150px"><input type="email" name="semail" id="semail" size="70px" required placeholder="Escribe tu Email"></td>
+					</tr>
+					
+					<tr>
+						<td width="150px" style="border: 0px solid black; padding:5px; margin:0px;"><label for="password">Contraseña <span class="obligatorio">*</span></label></td>
+						<td width="150px"><input type="text" name="spassword" id="spassword" required placeholder="Escriba su Contraseña"></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<br/><label><strong>Consentimiento RGPD</strong>: Nos permite guardar sus datos en nuestro sistema:</label>
+							<input TYPE="checkbox" NAME="rgpd" VALUE="false" placeholder="Consentimiento RGPD"><br/>
+						</td>						
+					</tr>	
+					<tr>
+						<td colspan="2" style="text-align: center;">
+							<br/><button type="submit" name="botonEnviar" id="Enviar" title="Registrar Datos"><p>Registrar Usuario</p></button>
+							<input type="reset" NAME="botonLimpiar" VALUE="Limpiar">
+							<p class="aviso"><br/><span class="obligatorio"> * </span>los campos son obligatorios.</p>
+						</td>						
+					</tr>				
+					<tr>
+						<td colspan="2">
+							<br/><br/>&nbsp;<br/>
+							<span style="text-decoration: underline">Derecho de Información</span>: Este es un trabajo académico, a continuación se indican los datos del responsable del tratamiento, cumpliéndose la legislación vigente en materia de protección de datos.					
+							<br/><br/>
+							<ul>
+								<li><strong>Responsable del tratamiento</strong>: Ismael Caballero Méndez</li>
+								<li><strong>Finalidad</strong>: Utilizar los datos del registro para poder realizar las reclamaciones, los datos recogidos no se utilizarán para otros usos.</li>
+								<li><strong>Legitimación</strong>: Consentimiento expreso y voluntario del usuario.</li>
+								<li><strong>Destinatorios</strong>: No existen otros destinatarios externos.</li>
+								<li><strong>Derechos</strong>: Puede ponerse en contacto a través del correo: <a href="mailto:info@carisma.es" target="_blank" title="Email de contacto">info@carisma.es</a></li>
+							</ul>					
+							<br/><br/>Puede obtener más información detallada, <a href="derecho_informacion_capa2.html" title="Capa 2. Información detallada sobre responsable del tratamiento">pulsando aquí</a>.
+							<br/><br/>&nbsp;<br/><br/> 
+						</td>
+					</tr>
+				</table>
+			</form> 
+				
+		</main>		
+	</section>
+	<footer id="pageContent">		
+		<p>&copy;2021. Trabajo Fin de Grado desarrollado por <strong>Ismael Caballero Méndez</strong>.</p>
+		<!-- <p>Plantilla Opensource "Minimalist" utilizada para este proyecto de <span style="text-decoration: underline">HTML5 Templates</span></p> -->
+	</footer>
+</body>
+</html>
